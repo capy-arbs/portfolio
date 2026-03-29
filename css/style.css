@@ -130,7 +130,6 @@ main {
 
 section { padding: 40px 0 0; }
 section:last-of-type { padding-bottom: 40px; }
-section:not(#hero) { border-top: 1px solid var(--border); }
 
 /* ============================================
    HERO
@@ -200,7 +199,8 @@ h1 strong { font-weight: 500; }
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--ink);
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
@@ -334,7 +334,6 @@ h1 strong { font-weight: 500; }
    FOOTER
    ============================================ */
 footer {
-  border-top: 1px solid var(--border);
   padding: 1.5rem clamp(1.5rem, 5vw, 2.5rem);
   max-width: var(--max); margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between;
