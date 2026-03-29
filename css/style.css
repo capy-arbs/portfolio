@@ -130,6 +130,7 @@ main {
 
 section { padding: 40px 0 0; }
 section:last-of-type { padding-bottom: 40px; }
+section:not(#hero) { border-top: 1px solid var(--border); }
 
 /* ============================================
    HERO
