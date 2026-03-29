@@ -156,7 +156,7 @@ h1 {
   opacity: 0;
   animation: fadeUp 0.5s 0.2s forwards;
 }
-h1 strong { font-weight: 500; }
+h1 strong { font-weight: 300; }
 .hero-sub {
   font-size: 1.05rem;
   color: var(--ink-muted);
@@ -296,7 +296,7 @@ h1 strong { font-weight: 500; }
 #contact { padding-bottom: 56px; }
 .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
 .contact-text h2 { font-size: 1.8rem; font-weight: 300; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
-.contact-text h2 strong { font-weight: 500; }
+.contact-text h2 strong { font-weight: 300; }
 .contact-text p { font-size: 14px; color: var(--ink-muted); line-height: 1.7; margin-bottom: 1.5rem; }
 .contact-links { display: flex; flex-direction: column; gap: 0.5rem; }
 .contact-link {
