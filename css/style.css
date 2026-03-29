@@ -128,13 +128,13 @@ main {
   padding: 0 clamp(1.5rem, 5vw, 2.5rem);
 }
 
-section { padding: 56px 0 0; }
-section:last-of-type { padding-bottom: 56px; }
+section { padding: 40px 0 0; }
+section:last-of-type { padding-bottom: 40px; }
 
 /* ============================================
    HERO
    ============================================ */
-#hero { padding-top: 100px; padding-bottom: 0; }
+#hero { padding-top: 80px; padding-bottom: 0; }
 
 .hero-label {
   font-family: var(--mono);
@@ -162,7 +162,7 @@ h1 strong { font-weight: 500; }
   color: var(--ink-muted);
   max-width: 480px;
   line-height: 1.7;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.75rem;
   opacity: 0;
   animation: fadeUp 0.5s 0.3s forwards;
 }
@@ -206,7 +206,7 @@ h1 strong { font-weight: 500; }
 /* ============================================
    ABOUT
    ============================================ */
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .about-text p { font-size: 1rem; color: var(--ink-muted); line-height: 1.8; margin-bottom: 1rem; }
 .about-text p:last-child { margin-bottom: 0; }
 .about-meta { display: flex; flex-direction: column; gap: 0.6rem; }
@@ -268,7 +268,6 @@ h1 strong { font-weight: 500; }
   border-bottom: 1px solid var(--border);
   cursor: default;
 }
-.project-item:first-child { border-top: 1px solid var(--border); }
 .project-num { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); margin-bottom: 0.5rem; }
 .project-title { font-size: 1.05rem; font-weight: 500; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
 .project-desc { font-size: 14px; color: var(--ink-muted); line-height: 1.65; max-width: 480px; margin-bottom: 0.8rem; }
@@ -298,7 +297,7 @@ h1 strong { font-weight: 500; }
    CONTACT
    ============================================ */
 #contact { padding-bottom: 56px; }
-.contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+.contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
 .contact-text h2 { font-size: 1.8rem; font-weight: 300; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
 .contact-text h2 strong { font-weight: 500; }
 .contact-text p { font-size: 14px; color: var(--ink-muted); line-height: 1.7; margin-bottom: 1.5rem; }
