@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name — Software Engineer</title>
+  <title>Graham — Software Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <!-- Dark mode applied before paint to avoid flash -->
@@ -19,7 +19,7 @@
      NAV
      ============================================ -->
 <nav>
-  <a class="nav-name" href="#hero">YourName.dev</a>
+  <a class="nav-name" href="#hero">arbs.dev</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -27,14 +27,6 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="your-cv.pdf" download class="btn-cv">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-        <polyline points="7,10 12,15 17,10"/>
-        <line x1="12" y1="15" x2="12" y2="3"/>
-      </svg>
-      CV
-    </a>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -57,18 +49,10 @@
        ============================================ -->
   <section id="hero">
     <p class="hero-label">Software Engineer</p>
-    <h1>Hi, I'm <strong>Your Name</strong>.<br>I build things for the web.</h1>
+    <h1>Hi, I'm <strong>Graham</strong>.<br>I build software that solves real problems.</h1>
     <p class="hero-sub">I'm a software engineer focused on building clean, performant, and well-crafted products. Currently open to new opportunities.</p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="your-cv.pdf" download class="btn btn-ghost">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-          <polyline points="7,10 12,15 17,10"/>
-          <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download CV
-      </a>
       <a href="#contact" class="btn btn-ghost">Get in Touch</a>
     </div>
   </section>
@@ -81,17 +65,13 @@
     <p class="section-heading reveal">About</p>
     <div class="about-grid reveal">
       <div class="about-text">
-        <p>I'm a software engineer with X years of experience building web applications, APIs, and developer tooling. I care deeply about code quality, system design, and user experience.</p>
-        <p>Outside of work, I enjoy contributing to open source, exploring new technologies, and writing about what I learn.</p>
+        <p>I'm a software engineer who started out building independently, and now build full-stack products under CapyBearHug LLC. Our flagship product is Mastiff Defense, an AI compliance platform.</p>
+        <p>Outside of work I'm into golf, karting, and F1 — I like things with technical details.</p>
       </div>
       <div class="about-meta">
         <div class="meta-item">
           <span class="meta-label">Location</span>
-          <span class="meta-value">City, State</span>
-        </div>
-        <div class="meta-item">
-          <span class="meta-label">Experience</span>
-          <span class="meta-value">X Years</span>
+          <span class="meta-value">Centennial, CO</span>
         </div>
         <div class="meta-item">
           <span class="meta-label">Status</span>
@@ -117,7 +97,6 @@
         <div class="skill-tags">
           <span class="skill-tag">TypeScript</span>
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">Go</span>
           <span class="skill-tag">SQL</span>
         </div>
       </div>
@@ -127,7 +106,6 @@
           <span class="skill-tag">React</span>
           <span class="skill-tag">Next.js</span>
           <span class="skill-tag">CSS</span>
-          <span class="skill-tag">Tailwind</span>
         </div>
       </div>
       <div class="skill-group">
@@ -162,12 +140,13 @@
       <div class="project-item reveal">
         <div>
           <p class="project-num">01</p>
-          <p class="project-title">Project Alpha</p>
-          <p class="project-desc">A full-stack web app that does something impressive. Built to solve a real problem — describe what it does and why it matters in 1–2 sentences.</p>
+          <p class="project-title">Mastiff Defense</p>
+          <p class="project-desc">A multi-tenant SaaS compliance middleware for enterprise and ecommerce platforms. Screens AI chatbot inputs and outputs through a three-layer pipeline — keyword matching, policy snapshots, and semantic evaluation — to prevent sensitive data leaks and prompt injection attacks. Ships with a per-tenant policy editor and full audit logging via AWS S3.</p>
           <div class="project-stack">
-            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Express</span>
             <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">Stripe</span>
+            <span class="stack-tag">AWS</span>
           </div>
         </div>
         <div class="project-links">
@@ -175,7 +154,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             GitHub
           </a>
-          <a href="#" class="project-link">
+          <a href="https://mastiffdefense.com" class="project-link" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live
           </a>
@@ -261,15 +240,15 @@
       <div class="contact-form">
         <div class="form-row">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Jane Smith" />
+          <input type="text" id="name" placeholder="Jane Smith" maxlength="100" autocomplete="name" />
         </div>
         <div class="form-row">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="jane@example.com" />
+          <input type="email" id="email" placeholder="jane@example.com" maxlength="254" autocomplete="email" />
         </div>
         <div class="form-row">
           <label for="message">Message</label>
-          <textarea id="message" placeholder="Hi, I'd love to chat about..."></textarea>
+          <textarea id="message" placeholder="Hi, I'd love to chat about..." maxlength="2000"></textarea>
         </div>
         <button class="btn btn-primary" onclick="handleSubmit(event)">Send Message</button>
       </div>
@@ -279,7 +258,7 @@
 </main>
 
 <footer>
-  <span class="footer-copy">© 2026 Your Name. Built with care.</span>
+  <span class="footer-copy">© 2026 Graham. Built with care.</span>
   <span class="footer-copy">yourname.dev</span>
 </footer>
 

@@ -6,30 +6,32 @@
 
 /* ── CSS Variables (Light mode) ── */
 :root {
-  --bg: #f7f6f2;
-  --surface: #efede7;
-  --border: #dddbd4;
-  --ink: #1a1917;
-  --ink-muted: #7a7872;
-  --accent: #2a5cff;
-  --accent-light: #e8eeff;
-  --nav-bg: rgba(247,246,242,0.88);
+  --bg: #f2f4f4;
+  --surface: #e6e9e9;
+  --border: #cdd2d2;
+  --ink: #0d0f0f;
+  --ink-muted: #5a6363;
+  --accent: #009e8e;
+  --accent-light: #d8f4f1;
+  --silver: #8a9494;
+  --nav-bg: rgba(242,244,244,0.88);
   --mono: 'DM Mono', monospace;
   --sans: 'DM Sans', sans-serif;
   --radius: 6px;
   --max: 760px;
 }
 
-/* ── Dark mode overrides ── */
+/* ── Dark mode overrides (Mercedes AMG) ── */
 html.dark {
-  --bg: #111110;
-  --surface: #1c1b19;
-  --border: #2e2d2a;
-  --ink: #f0ede6;
-  --ink-muted: #7a7872;
-  --accent: #5b7fff;
-  --accent-light: #1a2240;
-  --nav-bg: rgba(17,17,16,0.88);
+  --bg: #080808;
+  --surface: #111111;
+  --border: #222222;
+  --ink: #e0e4e4;
+  --ink-muted: #6b7474;
+  --accent: #00D2BE;
+  --accent-light: #001a18;
+  --silver: #9ea8a8;
+  --nav-bg: rgba(8,8,8,0.92);
 }
 
 html { scroll-behavior: smooth; }
@@ -184,7 +186,7 @@ h1 strong { font-weight: 500; }
   transition: all 0.15s;
 }
 .btn-primary { background: var(--ink); color: var(--bg); }
-.btn-primary:hover { background: #2a2925; transform: translateY(-1px); }
+.btn-primary:hover { background: #1a1a1a; transform: translateY(-1px); }
 .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--border); }
 .btn-ghost:hover { background: var(--surface); transform: translateY(-1px); }
 
