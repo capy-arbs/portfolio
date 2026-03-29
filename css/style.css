@@ -262,7 +262,7 @@ h1 strong { font-weight: 300; }
 .project-item {
   display: grid; grid-template-columns: 1fr auto;
   align-items: start; gap: 1.5rem;
-  padding: 0 0 1.75rem;
+  padding: 0;
   cursor: default;
 }
 .project-num { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); margin-bottom: 0.5rem; }
