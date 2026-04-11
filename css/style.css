@@ -100,25 +100,6 @@ nav {
 html.dark .icon-sun { display: block; }
 html.dark .icon-moon { display: none; }
 
-/* ── CV button ── */
-.btn-cv {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  padding: 0.45rem 0.9rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--ink-muted);
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  transition: all 0.15s;
-  white-space: nowrap;
-}
-.btn-cv:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
-.btn-cv svg { width: 12px; height: 12px; }
-
 /* ============================================
    LAYOUT
    ============================================ */
@@ -156,7 +137,6 @@ h1 {
   opacity: 0;
   animation: fadeUp 0.5s 0.2s forwards;
 }
-h1 strong { font-weight: 300; }
 .hero-sub {
   font-size: 1.05rem;
   color: var(--ink-muted);
@@ -193,7 +173,6 @@ h1 strong { font-weight: 300; }
 /* ============================================
    SECTION SHARED
    ============================================ */
-.section-rule { height: 1px; background: var(--border); margin-bottom: 1.5rem; }
 .section-heading {
   font-family: var(--sans);
   font-size: 12px;
@@ -226,36 +205,6 @@ h1 strong { font-weight: 300; }
 .meta-value { font-size: 14px; font-weight: 500; }
 
 /* ============================================
-   SKILLS
-   ============================================ */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
-.skill-group {
-  padding: 1.25rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  transition: border-color 0.15s, transform 0.15s;
-}
-.skill-group:hover { border-color: var(--accent); transform: translateY(-2px); }
-.skill-group-name {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
-}
-.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.skill-tag {
-  font-size: 12px;
-  color: var(--ink-muted);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 0.2rem 0.55rem;
-  border-radius: 3px;
-}
-
-/* ============================================
    PROJECTS
    ============================================ */
 .projects-list { display: flex; flex-direction: column; gap: 1px; }
@@ -265,7 +214,6 @@ h1 strong { font-weight: 300; }
   padding: 0;
   cursor: default;
 }
-.project-num { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); margin-bottom: 0.5rem; }
 .project-title { font-size: 1.05rem; font-weight: 500; margin-bottom: 0.4rem; letter-spacing: -0.01em; }
 .project-desc { font-size: 1rem; color: var(--ink-muted); line-height: 1.65; max-width: 480px; margin-bottom: 0.8rem; }
 .project-stack { display: flex; flex-wrap: wrap; gap: 0.35rem; }
@@ -291,12 +239,22 @@ h1 strong { font-weight: 300; }
 .project-link svg { width: 12px; height: 12px; }
 
 /* ============================================
+   SIDE PROJECTS
+   ============================================ */
+#side-projects { padding-top: 48px; }
+.side-projects-list { display: flex; flex-direction: column; gap: 1rem; }
+.side-project-item {
+  display: grid; grid-template-columns: 1fr auto;
+  align-items: start; gap: 1.5rem;
+}
+.side-project-item .project-title { font-size: 0.95rem; font-weight: 500; }
+.side-project-item .project-desc { font-size: 0.9rem; margin-bottom: 0; line-height: 1.6; }
+
+/* ============================================
    CONTACT
    ============================================ */
 #contact { padding-bottom: 56px; }
 .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
-.contact-text h2 { font-size: 1.05rem; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 0.75rem; }
-.contact-text h2 strong { font-weight: 500; }
 .contact-text p { font-size: 1rem; color: var(--ink-muted); line-height: 1.7; margin-bottom: 1.5rem; }
 .contact-links { display: flex; flex-direction: column; gap: 0.5rem; }
 .contact-link {
@@ -312,20 +270,6 @@ h1 strong { font-weight: 300; }
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .contact-link-icon svg { width: 13px; height: 13px; }
-.contact-form { display: flex; flex-direction: column; gap: 0.75rem; }
-.form-row { display: flex; flex-direction: column; gap: 0.35rem; }
-.form-row label {
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted);
-}
-.form-row input, .form-row textarea {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 0.65rem 0.875rem;
-  font-family: var(--sans); font-size: 14px; color: var(--ink);
-  outline: none; transition: border-color 0.15s; resize: vertical;
-}
-.form-row input:focus, .form-row textarea:focus { border-color: var(--accent); }
-.form-row textarea { min-height: 100px; }
 
 /* ============================================
    FOOTER
@@ -355,7 +299,7 @@ footer {
    ============================================ */
 @media (max-width: 600px) {
   .about-grid, .contact-inner { grid-template-columns: 1fr; }
-  .project-item { grid-template-columns: 1fr; }
+  .project-item, .side-project-item { grid-template-columns: 1fr; }
   .project-links { flex-direction: row; align-items: center; }
   .nav-links { display: none; }
 }

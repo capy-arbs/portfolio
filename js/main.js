@@ -29,7 +29,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// Stagger skill cards and project items
-document.querySelectorAll('.skills-grid .skill-group, .projects-list .project-item')
+document.querySelectorAll('.projects-list .project-item, .side-projects-list .side-project-item')
   .forEach((el, i) => { el.style.transitionDelay = `${i * 0.07}s`; });
 
