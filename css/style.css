@@ -166,7 +166,7 @@ h1 {
   transition: all 0.15s;
 }
 .btn-primary { background: var(--ink); color: var(--bg); }
-.btn-primary:hover { background: #1a1a1a; transform: translateY(-1px); }
+.btn-primary:hover { background: var(--accent); color: #fff; transform: translateY(-1px); }
 .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--border); }
 .btn-ghost:hover { background: var(--surface); transform: translateY(-1px); }
 
