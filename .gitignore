@@ -1,0 +1,12 @@
+# Per-project Claude config (persona instructions, etc.) — never commit
+CLAUDE.md
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Misc
+*.log
